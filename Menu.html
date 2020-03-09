@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our Menu</title>	
+<style type="text/css">
+
+body {
+		background-color:#330000 ;
+		margin:0px;
+	    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+	margin:0;
+	display: flex;
+	border-bottom: 1px solid red;
+	font-family:Charcoal, sans-serif;
+	background-color: #330000;
+}
+.logo {
+	width: 120px;
+	height: 100px;
+	margin-left: 50px;
+	border-radius: 50px;
+	
+}
+li {
+	font-size: 2em;
+	display:inline-block; 
+	margin-left:0;
+	
+}
+a {
+	text-decoration: none;
+	line-height:70px;
+	font-weight:700;
+	text-transform:uppercase;
+	margin-left: 100px;
+	color: #ffffff;
+	position:relative;
+
+	 
+} 
+header .active
+{
+	border-bottom: 15px solid red;
+	border-radius: 10px;
+}
+a::before
+{
+	content: '';
+	height:5px;
+	background-color: red; 
+	width:0%;
+	position: absolute;
+	bottom: -8px;
+	transition: all .5s ease;
+	 
+}
+a:hover:before{
+	width:100%;
+	left:0; 
+}
+.homebody2 {
+	margin:0;
+	padding-left:150px;
+	padding-top:60px;
+	font-size: 25px;
+	color:#ffffff;
+	padding-bottom: 80px;
+	border-bottom: 4px solid red;
+	
+}
+.image2 {
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("img/bg17.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.homebody2 h1{
+	color:white;
+	margin:0;
+	text-align: left;	
+	font-weight: 700;
+	font-size: 70px;
+	border-left: 15px solid yellow;
+	border-radius: 10px;
+	padding-left: 20px;
+	text-shadow: 3px 3px black;
+}
+.homebody2 h5{
+	margin-top:10px;
+	color:yellow;
+	margin: 0;
+	font-size: 35px;
+	text-align:left;
+	border-left: 15px solid red;
+	border-radius: 10px;
+	padding-left: 40px;
+	 text-shadow: 1px 3px black;
+	 margin-right: 1100px;
+
+}
+.menu1 {
+	margin:0;
+	border-bottom:2px solid red;
+	background-color: black;
+	padding-top:20px;
+	padding-bottom: 20px;
+}
+.menu1 h1 {
+	color:white;
+	text-align: center;
+	font-size: 60px;
+	margin:0;
+}
+.seller1 {
+	border-bottom: 5px solid black;
+	padding-bottom: 50px;
+}
+.img1 {
+	margin:0;
+	width: 540px;
+	height: 330px;
+	float:left;
+	border:1px solid red;
+	margin-top:20px;
+	margin-left:20px;
+	border-radius: 25px;
+}
+h2{
+	margin:0;
+	text-align: left;
+	padding-right: 180px;
+	padding-top:20px;
+	font-size: 41px;
+	color:white;
+}
+.dis {
+	color:yellow;
+	margin:0;
+	padding-top:20px;
+	font-size:45px;
+	font-weight: 700;
+	margin-left:700px;
+	margin-right:50px;
+	margin-top:20px;
+}
+.dis1 {
+	font-family:Arial, Helvetica, sans-serif;
+	padding-top:20px;
+	color:yellow;
+	margin:0;
+	text-align: center;
+	font-size: 20px;
+}
+.btn1 {
+	font-size:40px;
+	margin:0;
+	margin-top: 50px;
+	margin-left: 200px;
+	width: 500px;
+	border-radius: 20px;
+	background-color: black;
+	color:white;
+	position: relative;
+}
+.btn1:hover {
+  background-color: #555;
+}
+.delivery {
+	font-size:40px;
+	margin:0;
+	margin-left: 500px;
+	width: 500px;
+	border-radius: 20px;
+	background-color: black;
+	color:white;
+	position: relative;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+.delivery:hover {
+  background-color: #555;
+}
+
+.seller2 {
+	margin:0;
+	border-bottom: 5px solid black;
+	padding-bottom: 50px;
+}
+.img2 {
+	margin:0;
+	width: 540px;
+	height: 330px;
+	float:left;
+	border:1px solid red;
+	margin-top:20px;
+	margin-left:20px;
+	border-radius: 25px;
+}
+
+.seller3 {
+	margin:0;
+	border-bottom: 5px solid black;
+	padding-bottom: 50px;
+}
+.img2 {
+	margin:0;
+	width: 540px;
+	height: 330px;
+	float:left;
+	border:1px solid red;
+	margin-top:20px;
+	margin-left:20px;
+	border-radius: 25px;
+}
+
+.seller4 {
+	margin:0;
+	border-bottom: 5px solid black;
+	padding-bottom: 50px;
+}
+.img2 {
+	margin:0;
+	width: 540px;
+	height: 330px;
+	float:left;
+	border:1px solid red;
+	margin-top:20px;
+	margin-left:20px;
+	border-radius: 25px;
+	margin-bottom: 
+}
+.seller5 {
+	border-bottom: 2px solid red;
+	padding-bottom: 100px;
+}
+.footer {
+   background-color: black;
+   color: yellow;	
+   text-align: center;
+   font-size: 20px;
+   font-weight: 600;
+   border-radius: 10px;
+}
+.foot{
+	display: inline-block;
+}
+#burgerid, #burgerid2, #burgerid3, #burgerid4, #burgerid5{
+	color:yellow;
+	font-size: 30px;
+	margin:0;
+	margin-top: 20px;
+	float: right;
+	margin-right: 359px;
+	background-color:black;
+	border:2px solid white;
+	border-radius: 10px;
+	padding:10px;
+}
+</style>
+</head>
+<body>
+<!--Start of Header -->
+<header>
+			<img src="img/bg11.jpg" class="logo"></img>
+				<div class="container">
+					<ul>
+						<li><a href="Homepage.html">Home</a></li>
+						<li><a class="active" href="Menu.html">Menu</a></li>
+						<li><a href="About.html">About Us</a></li>
+						<li><a href="Contact.html">Contact</a></li>
+						<li><a class="logout" href="Login.html">Logout</a></li>
+					</ul>
+		</div>
+			
+</header>
+<!--End of Header -->
+
+<!--body -->
+	<div class="body2">
+		<div class="image2">
+		<div class="homebody2">
+			<h1>Ultimate Burger <br>Specialty Burgers</h1>
+			<h5> Best Sales!!!</h5>
+			</div>	
+		</div>
+			<div class="menu1">
+				<h1> Biggest Ultimate Burger Sale!</h1>
+			</div>
+				
+				<form action="Contact.html" id="burgerform">
+					<div class="seller1">
+						<img src="img/men5.jpg" class="img1">
+							<p class="dis">ULT CHEEZY BEEF BURGER!</p>
+							<p class="dis1"><input type="radio" name="selectedburger" value="burger1" onclick="burger()">SMALL UCBB = P40.00</p>
+							<p class="dis1"><input type="radio" name="selectedburger" value="burger2" onclick="burger()">MEDIUM UCBB = P50.00</p>
+							<p class="dis1"><input type="radio" name="selectedburger" value="burger3" onclick="burger()">LARGE UCBB = P70.00</p>
+							<p class="dis1"><input type="radio" name="selectedburger" value="burger4" onclick="burger()">EXTRA LARGE UCBB = P100.00</p>
+							<div id="burgerid"></div>               
+							<input class="btn1" type="submit" value="ORDER NOW!">
+							
+					</div>	
+					<div class="seller2">
+						<img src="img/menu1.jpg" class="img2">
+							<p class="dis">ULT CHEEZY PORKY BURGER!</p>
+							<p class="dis1"><input type="radio" name="selectedburger" value="burger5" onclick="burger2()">SMALL UCPB = P50.00</p>
+							<p class="dis1"><input type="radio" name="selectedburger" value="burger6" onclick="burger2()">MEDIUM UCPB = P70.00</p>
+							<p class="dis1"><input type="radio" name="selectedburger" value="burger7" onclick="burger2()">LARGE UCPB = P90.00</p>
+							<p class="dis1"><input type="radio" name="selectedburger" value="burger8" onclick="burger2()">EXTRA LARGE UCPB = P105.00</p>
+							<div id="burgerid2"></div>  
+							<input class="btn1" type="submit" value="ORDER NOW!">
+					</div>
+					<div class="seller3">
+						<img src="img/menu2.png" class="img2">
+							<p class="dis">ULT BACON & CHEEZY BURGER</p>
+							<p class="dis1"><input type="radio" name="selectedburger" value="burger9" onclick="burger3()">SMALL UBCB = P40.00</p>
+							<p class="dis1"><input type="radio" name="selectedburger" value="burger10" onclick="burger3()">MEDIUM UBCB = P60.00</p>
+							<p class="dis1"><input type="radio" name="selectedburger" value="burger11" onclick="burger3()">LARGE UBCB = P80.00</p>
+							<p class="dis1"><input type="radio" name="selectedburger" value="burger12" onclick="burger3()">EXTRA LARGE UBCB = P100.00</p>
+							<div id="burgerid3"></div> 
+							<input class="btn1" type="submit" value="ORDER NOW!">
+					</div>
+					<div class="seller4">
+						<img src="img/menu3.jpg" class="img2">
+							<p class="dis">ULT TRIPLE ANGUS BEEF BURGER</p>
+							<p class="dis1"><input type="radio" name="selectedburger" value="burger13" onclick="burger4()">SMALL UBCB = P40.00</p>
+							<p class="dis1"><input type="radio" name="selectedburger" value="burger14" onclick="burger4()">MEDIUM UTABB = P60.00</p>
+							<p class="dis1"><input type="radio" name="selectedburger" value="burger15" onclick="burger4()">LARGE UTABB = P75.00</p>
+							<p class="dis1"><input type="radio" name="selectedburger" value="burger16" onclick="burger4()">EXTRA LARGE UTABB = P110.00</p>
+							<div id="burgerid4"></div> 
+							<input class="btn1" type="submit" value="ORDER NOW!">
+					</div>
+					<div class="seller5">
+						<img src="img/menu4.jpg" class="img2">
+							<p class="dis">ULT LAMB & BACON BURGER</p>
+							<p class="dis1"><input type="radio" name="selectedburger" value="burger17" onclick="burger5()">SMALL ULBB = P50.00</p>
+							<p class="dis1"><input type="radio" name="selectedburger" value="burger18" onclick="burger5()">MEDIUM ULBB = P70.00</p>
+							<p class="dis1"><input type="radio" name="selectedburger" value="burger19" onclick="burger5()">LARGE ULBB = P90.00</p>
+							<p class="dis1"><input type="radio" name="selectedburger" value="burger20" onclick="burger5()">EXTRA LARGE ULBB = P120.00</p>
+							<div id="burgerid5"></div> 
+							<input class="btn1" type="submit" value="ORDER NOW!">
+					</div>
+				</form>
+				<div class="menu1">
+					<form action="Contact.html">
+				<h1> FREE DELIVERY !!!</h1>
+					<input class="delivery" type="submit" value="Click Me!">
+					</form>
+			</div>
+<div class="footer">
+ 			 <p class="foot">ULTIMATEBURGERS TM & Copyright 2020 UltimateBurger Corporation. All Rights Reserved.</p>
+	</div>
+	</div>
+</div>
+	<script type="text/javascript">
+var burger_prices = new Array();
+ burger_prices["burger1"]=40;
+ burger_prices["burger2"]=50;
+ burger_prices["burger3"]=70;
+ burger_prices["burger4"]=100;
+ burger_prices["burger5"]=50;
+ burger_prices["burger6"]=70;
+ burger_prices["burger7"]=90;
+ burger_prices["burger8"]=105;
+ burger_prices["burger9"]=40;
+ burger_prices["burger10"]=60;
+ burger_prices["burger11"]=80;
+ burger_prices["burger12"]=100;
+ burger_prices["burger13"]=40;
+ burger_prices["burger14"]=60;
+ burger_prices["burger15"]=75;
+ burger_prices["burger16"]=110;
+ burger_prices["burger17"]=50;
+ burger_prices["burger18"]=70;
+ burger_prices["burger19"]=90;
+ burger_prices["burger20"]=120;
+
+
+
+function getBurgerPrice()
+{  
+    var burgerPrice=0;
+    var theForm = document.forms["burgerform"];
+    var selectedBurger = theForm.elements["selectedburger"];
+    for(var i = 0; i < selectedBurger.length; i++)
+    {
+        if(selectedBurger[i].checked)
+        {
+            
+            burgerPrice = burger_prices[selectedBurger[i].value];
+           
+            break;
+        }
+    }
+    
+    return burgerPrice;
+}
+
+
+     
+function burger()
+{
+   
+    var burgerPrice = getBurgerPrice()
+    
+    var brg = document.getElementById('burgerid');
+  
+    brg.innerHTML = "You Choose UCBB: P"+burgerPrice;
+}
+
+function burger2()
+{
+ var burgerPrice = getBurgerPrice()
+
+    var brg =document.getElementById('burgerid2');
+
+    brg.innerHTML = "You Choose UCPB: P" + burgerPrice;
+}
+function burger3()
+{
+ var burgerPrice = getBurgerPrice()
+
+    var brg =document.getElementById('burgerid3');
+
+    brg.innerHTML = "You Choose UBCB: P" + burgerPrice;
+}
+function burger4()
+{
+ var burgerPrice = getBurgerPrice()
+
+    var brg =document.getElementById('burgerid4');
+
+    brg.innerHTML = "You Choose UTABC: P" + burgerPrice;
+}
+function burger5()
+{
+ var burgerPrice = getBurgerPrice()
+
+    var brg =document.getElementById('burgerid5');
+
+    brg.innerHTML = "You Choose ULBB: P" + burgerPrice;
+}
+
+	</script>
+</body>
+</html>

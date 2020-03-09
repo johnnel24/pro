@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+<style type="text/css">
+	body {
+	background-color: powderblue;
+	margin:0;
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img/bg15.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.logo {
+	width: 120px;
+	height: 100px;
+	margin-left: 50px;
+	border:1px solid white;
+	border-radius: 50px;
+}
+.container {
+	margin:0;
+}
+.form1 {
+	margin-top:120px;
+	float:left;
+	padding-bottom: 250px;
+	margin-left: 50px;
+}
+h1 {
+	color:yellow;
+	margin:0;
+	text-align:left;	
+	font-size: 50px;
+	border-left: 15px solid red;
+	border-radius: 10px;
+	text-shadow: 2px 3px black;
+	margin-bottom:10px;
+	padding-left: 20px;
+}
+h2 {
+	color:white;
+	font-size: 30px;
+	margin:0;
+	padding-left: 40px;
+	padding-top:20px;
+	padding-bottom: 10px;
+	text-shadow: 2px 3px black;
+}
+input {
+	color:black;
+	width: 300px;
+	height: 40px;
+	margin-left:40px;
+	font-size: 20px;
+	text-align: 20px;
+	border-radius: 10px;
+}
+.submit{
+	padding-top: 20px;
+	color:black;
+	font-family: arial;
+	font-size: 30px;
+}
+span {
+	font-size: 25px;
+	font-weight: 700;
+	color:red;
+	text-shadow: 1px 1px black;	
+}
+
+</style>
+<script src="Login.js"></script>
+
+</head>
+<body>
+  <img src="img/bg11.jpg" class="logo"></img>
+	<div class="container">
+		<form class="form1" name="Login" action="Homepage.html"onsubmit="return Logform()">
+			
+			<h1> Please Login </h1>
+					<h2>Username</h2>
+							<input type="text" name="username" placeholder="Username">
+								<span id="namelocation"></span>
+								<span id="namelocation2"><br></span>
+					<h2>Password</h2>
+							<input type="password" name="password" placeholder="Password">
+								<span id="passwordlocation"></span>
+								<span id="passwordlocation2"></span>
+							<div class="submit">
+					<input type="submit" value="Login">
+						</div>
+
+		</form>
+	</div>
+<script type="text/javascript">
+	function Logform()
+		{
+			var a = document.Login.username.value.length;	
+			var b = document.Login.password.value.length;
+
+				if (a==null || a=="")
+				{ 
+				 document.getElementById("namelocation").innerHTML="Please enter your Username";
+				 return false;
+				}
+				else
+				{		
+					document.getElementById("namelocation").innerHTML="";
+				}
+				if (a<6) {
+					document.getElementById("namelocation2").innerHTML="Please input higher than 6 characters";
+				 return false;	
+				}
+				else
+				{		
+					document.getElementById("namelocation2").innerHTML="Input Valid";			
+				}
+			    if (b==null || b=="")
+				{ 
+				  document.getElementById("passwordlocation").innerHTML="Please enter your Password	";
+				  return false;
+				}
+				else 
+				{
+					document.getElementById("passwordlocation").innerHTML="";		
+				}
+				if (b<6) {
+					document.getElementById("passwordlocation2").innerHTML="Please input higher than 6 Characters";
+					return false;
+				}
+				else 
+				{
+					alert("Welcome To my Website I hope you will Enjoy it.");
+					return true;
+				}
+
+		} 
+</script>
+</body>
+</html>

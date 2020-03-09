@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our Contact</title>	
+<style type="text/css">
+body {
+		background-color:#330000 ;
+		margin:0px;
+	    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header {
+	margin:0;
+	display: flex;
+	border-bottom: 1px solid red;
+	font-family:Charcoal, sans-serif;
+	background-color: #330000;
+
+
+}
+.logo {
+	width: 120px;
+	height: 100px;
+	margin-left: 50px;
+	border:1px solid white;
+	border-radius: 50px;
+	
+}
+li {
+	font-size: 2em;
+	display:inline-block; 
+	margin-left:0;
+	
+}
+a {
+	text-decoration: none;
+	line-height:70px;
+	font-weight:700;
+	text-transform:uppercase;
+	margin-left: 100px;
+	color: #ffffff;
+	position:relative;
+
+	 
+} 
+header .active
+{
+	border-bottom: 15px solid red;
+	border-radius: 10px;
+	 
+}
+a::before
+{
+	content: '';
+	height:5px;
+	background-color: red; 
+	width:0%;
+	position: absolute;
+	bottom: -8px;
+	transition: all .5s ease;
+	 
+}
+a:hover:before{
+	width:100%;
+	left:0; 
+}
+.body5{
+	margin: 0;
+}
+.image5 {
+	 background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img/bg12.jpg");
+	 background-repeat: no-repeat;
+	 background-size: cover;	
+}
+.homebody5 {
+	margin:0;
+	padding-top:60px;
+	color:#ffffff;
+	
+	
+}
+h1{
+	color:white;
+	margin:0;
+	text-align:left;	
+	font-size: 70px;
+	border-left: 15px solid yellow;
+	margin-left: 550px;
+	border-radius: 10px;
+	text-shadow: 2px 3px black;
+	margin-bottom: 50px;
+	padding-left: 20px;
+
+}
+.forms {
+	border-top:2px solid red;
+}
+.insideform {
+	border-left: 20px solid yellow;
+	border-radius: 20px;
+	margin-top:20px;
+	margin-left: 120px;
+	margin-right: 150px;
+}
+h4 {
+	font-size: 40px;
+	margin:0;
+	padding-left: 20px;
+	padding-top:20px;
+	padding-bottom: 10px;
+	text-shadow: 2px 3px black;
+}
+input {
+	color:black;
+	width: 600px;
+	height: 40px;
+	margin-left: 30px;
+	font-size: 20px;
+	text-align: 20px;
+	border-radius: 10px;
+}
+textarea {
+	font-size: 20px;
+	margin-left: 20px;
+	
+}
+.btn1 {
+	font-size:30px;
+	width: 200px;
+	border-radius: 20px;
+	background-color: white;
+	color:black;
+	position: relative;
+}
+.btn1:hover {
+  background-color: #555;
+}
+span {
+	color:red;
+	font-size: 20px;
+	font-weight: 600;
+	margin-left: 50px;
+}
+h5 {
+	margin:0;
+	color:red;
+	font-size: 20px;
+	font-weight: 600;
+	margin-left: 40px;
+}
+.border2 {
+	margin-top:40px;
+	border-bottom: 5px solid red;
+	margin-bottom: 100px;
+}
+.map {
+	float: right;
+	padding-right: 30px;
+	padding-top:20px;
+	margin:0;
+}
+.address {
+	float:right;
+	margin: 0;
+
+}
+.icon img{
+	margin-top: 40px;
+	height: 80px;
+	width: 100px;
+	background-color: black;
+	float: right;
+	margin-left: 20px;
+	border-radius: 50%;
+
+}
+h3 {
+	font-size: 25px;
+	margin:0;
+	text-shadow: 2px 3px black;
+}
+p {
+	display: inline-block;
+	margin-left: 30px;
+
+}
+.border3{
+	border-bottom: 4px solid red;
+	padding-bottom: 100px;
+}
+.footer {
+   background-color: black;
+   color: yellow;	
+   text-align: center;
+   font-size: 20px;
+   font-weight: 600;
+}
+</style>
+</head>
+<body>		
+<!--Start of Header -->
+	<header>
+			<img src="img/bg11.jpg" class="logo"></img>
+				<div class="container">
+					<ul>
+						<li><a href="Homepage.html">Home</a></li>
+						<li><a href="Menu.html">Menu</a></li>
+						<li><a href="About.html">About Us</a></li>
+						<li><a class="active" href="Contact.html">Contact</a></li>
+						<li><a class="logout" href="Login.html">Logout</a></li>
+					</ul>
+		</div>
+	</header>
+<!--End of Header -->
+<!-- Contact Body -->
+<div class="body5">
+		<div class="image5">
+		<div class="homebody5">
+			<h1> Reach Us!</h1>
+					<div class="forms">
+						<div class="map">
+								<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7339.476321177669!2d121.06402022585452!3d14.725415352050547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b06346b1a9e7%3A0xea66ab083623b7e4!2sHilltop%20Subdivision!5e0!3m2!1sen!2sph!4v1583574907770!5m2!1sen!2sph" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+								</p>
+							</div>
+					<form class="insideform" name="forms" action="End.html" onsubmit="return form()">
+						<h4> First Name </h4>
+							<input type="text" name="name" placeholder="First Name...">
+								<span id="nameloc"></span>
+						<h4> Last Name </h4>
+							<input type="text" name="last" placeholder="Last Name...">
+								<span id="lastloc"></span>
+						<h4> Contact No. </h4>
+							<input type="number" name="contact" placeholder="Number...">
+								<span id="numloc"></span>
+						<h4> Email Address </h4>
+							<input type="text" name="emaill" placeholder="Email...">
+								<h5 id="emaill"></h5>
+							<div class="address">
+									<h3> #48 caridad St. Hilltop </h3>
+									<h3> Fatima Novaliches</h3>
+									<h3> Greater Lagro QC.</h3><br>
+									<h3> Tel. 0923-24-743 </h3>
+									<h3> Mobile No. 09085423562 </h3>
+										<div class="icon">
+											<img src="img/insta.png">
+											<img src="img/twitters.png">
+											<img src="img/facebook.png">
+										</div>
+										<p>ULTBurger@</p>
+										<p>ULTBurger@</p>
+										<p>ULTBurger@</p>
+
+							</div>
+						<h4>Feedback</h4>
+    						<textarea name="subject" placeholder="Write something.."style="height:200px;width: 800px; border-radius: 10px; "></textarea>
+    						<div>
+    					<input class="btn1" type="submit" value="Submit"> 
+    						</div>
+    				</form>
+    						</div>
+					</div>	
+					<div class="border3">
+						</div>
+								<div class="footer">
+									<p>ULTIMATEBURGERS TM & Copyright 2020 UltimateBurger Corporation. All Rights Reserved.</p>
+								</div>	
+					</div>
+</div>
+
+	<script type="text/javascript">
+		function form() 
+		{
+			var name=document.forms.name.value.length;
+			var last=document.forms.last.value.length;
+			var cont=document.forms.contact.value.length;
+			var x=document.forms.emaill.value;
+			var atposition=x.indexOf("@"); 
+			var dotposition=x.lastIndexOf("."); 
+
+				if(name==null || name=="")
+				{
+					document.getElementById("nameloc").innerHTML="Please input first name";
+					return false;
+				}
+				else
+				{
+					document.getElementById("nameloc").innerHTML="Name Valid";
+				}
+				if (last==null || last=="")
+				{
+					document.getElementById("lastloc").innerHTML="Please input last name";
+					return false;
+				}
+				else
+				{
+					document.getElementById("lastloc").innerHTML="LastName Valid";
+				}
+				if (cont !=8 && cont !=11)
+				{
+  					document.getElementById("numloc").innerHTML="input valid number";
+  					return false;
+				}
+				else
+				{
+  					document.getElementById("numloc").innerHTML="Valid input!";	
+ 				}
+ 				if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){ 
+  					document.getElementById("emaill").innerHTML=("Please enter a valid e-mail address"); 
+  					return false; 
+  				}
+				else
+				{
+          			alert("Your information has been send!");			
+          		} 
+				} 
+	</script>
+
+</body>
+</html>
